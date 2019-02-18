@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="59cm" height="24cm" viewBox="39 19 1165 470" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="40" y="20" width="148.6" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="40" y="20" width="148.6" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="114.3" y="40">Student</text>
+    <rect style="fill: #ffffff" x="40" y="48" width="148.6" height="100"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="40" y="48" width="148.6" height="100"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="43" y="61.2">-StudentID: char</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="43" y="77.2">+StudentName: char</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="43" y="93.2">+DegreeLevel: char</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="43" y="109.2">+DegreeName: char</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="43" y="125.2">+Sex: char</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="43" y="141.2">+DOB: date</text>
+    <rect style="fill: #ffffff" x="40" y="148" width="148.6" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="40" y="148" width="148.6" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="308" y="22" width="171.7" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="308" y="22" width="171.7" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="393.85" y="42">Department</text>
+    <rect style="fill: #ffffff" x="308" y="50" width="171.7" height="84"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="308" y="50" width="171.7" height="84"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="311" y="63.2">-DeptID: char</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="311" y="79.2">+DeptName: char</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="311" y="95.2">-EmpID: char</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="311" y="111.2">+CardholderName: char</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="311" y="127.2">+CardNo: long int</text>
+    <rect style="fill: #ffffff" x="308" y="134" width="171.7" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="308" y="134" width="171.7" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="614" y="21" width="248.7" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="614" y="21" width="248.7" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="738.35" y="41">AwardApplication</text>
+    <rect style="fill: #ffffff" x="614" y="49" width="248.7" height="100"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="614" y="49" width="248.7" height="100"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="617" y="62.2">+ProgDesc: char</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="617" y="78.2">+ReasonforAward: char</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="617" y="94.2">+AwardCriteria: char</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="617" y="110.2">+TypeofAward: char</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="617" y="126.2">+DollarValue: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="617" y="142.2">+SourceofFunds: char</text>
+    <rect style="fill: #ffffff" x="614" y="149" width="248.7" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="614" y="149" width="248.7" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="617" y="162.2">+FundSource(SourceofFunds): int</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1004" y="27" width="179.4" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1004" y="27" width="179.4" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1093.7" y="47">Guidelines</text>
+    <rect style="fill: #ffffff" x="1004" y="55" width="179.4" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1004" y="55" width="179.4" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1007" y="68.2">#CategoryNo: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1007" y="84.2">#LevelofApproval: char</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1007" y="100.2">#AwardValueCap: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1007" y="116.2">#SpecialApproval: bool</text>
+    <rect style="fill: #ffffff" x="1004" y="123" width="179.4" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1004" y="123" width="179.4" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="985" y="209" width="217.9" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="985" y="209" width="217.9" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1093.95" y="229">Employee</text>
+    <rect style="fill: #ffffff" x="985" y="237" width="217.9" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="985" y="237" width="217.9" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="988" y="250.2">-EmpID: char</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="988" y="266.2">+EmpName: char</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="988" y="282.2">+EmpDept: char</text>
+    <rect style="fill: #ffffff" x="985" y="289" width="217.9" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="985" y="289" width="217.9" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="988" y="302.2">+approveApplication(): bool</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="642" y="231" width="194.8" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="642" y="231" width="194.8" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="739.4" y="251">AdminOffice</text>
+    <rect style="fill: #ffffff" x="642" y="259" width="194.8" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="642" y="259" width="194.8" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="645" y="272.2">-SpecialApproval: bool</text>
+    <rect style="fill: #ffffff" x="642" y="279" width="194.8" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="642" y="279" width="194.8" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="645" y="292.2">+meetsGuidelines(): bool</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="997" y="405" width="194.8" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="997" y="405" width="194.8" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1094.4" y="425">ProvostOffice</text>
+    <rect style="fill: #ffffff" x="997" y="433" width="194.8" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="997" y="433" width="194.8" height="8"/>
+    <rect style="fill: #ffffff" x="997" y="441" width="194.8" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="997" y="441" width="194.8" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1000" y="454.2">+meetsGuidelines(): bool</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1000" y="470.2">+auditDB()</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="699" y="398" width="156.3" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="699" y="398" width="156.3" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="777.15" y="418">FinancialServices</text>
+    <rect style="fill: #ffffff" x="699" y="426" width="156.3" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="699" y="426" width="156.3" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="702" y="439.2">-TransactionNo: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="702" y="455.2">-AwardAmount: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="702" y="471.2">+ReceiverName: char</text>
+    <rect style="fill: #ffffff" x="699" y="478" width="156.3" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="699" y="478" width="156.3" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="402" y="399" width="164" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="402" y="399" width="164" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="484" y="419">PRD</text>
+    <rect style="fill: #ffffff" x="402" y="427" width="164" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="402" y="427" width="164" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="405" y="440.2">#InvoiceNo: char</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="405" y="456.2">#DocSerialNo: char</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="405" y="472.2">+SourceofFunds: char</text>
+    <rect style="fill: #ffffff" x="402" y="479" width="164" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="402" y="479" width="164" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="49" y="230" width="133.2" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="49" y="230" width="133.2" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="115.6" y="250">Awards</text>
+    <rect style="fill: #ffffff" x="49" y="258" width="133.2" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="49" y="258" width="133.2" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="52" y="271.2">#AwardID: char</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="52" y="287.2">+AwardName: char</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="52" y="303.2">#AwardValue: int</text>
+    <rect style="fill: #ffffff" x="49" y="310" width="133.2" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="49" y="310" width="133.2" height="8"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="965.757,259 903.497,259 903.497,272 839,272 "/>
+    <polygon style="fill: #ffffff" points="965.757,267 981.757,259 965.757,251 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="965.757,267 981.757,259 965.757,251 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1093.95,327.236 1093.95,365 1094.4,365 1094.4,405 "/>
+    <polygon style="fill: #ffffff" points="1101.95,327.236 1093.95,311.236 1085.95,327.236 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1101.95,327.236 1093.95,311.236 1085.95,327.236 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="287.001" y1="89.1473" x2="188.6" y2="90"/>
+    <polygon style="fill: #000000" points="287.044,94.1471 303,89.0087 286.957,84.1475 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="287.044,94.1471 303,89.0087 286.957,84.1475 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="247" y="105">Belongs to</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="594" y1="92.8705" x2="479.7" y2="92"/>
+    <polygon style="fill: #000000" points="593.962,97.8704 610,92.9924 594.039,87.8707 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="593.962,97.8704 610,92.9924 594.039,87.8707 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="545" y="109">Submits</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="980" y1="91.8734" x2="862.7" y2="91"/>
+    <polygon style="fill: #000000" points="979.963,96.8733 996,91.9926 980.038,86.8736 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="979.963,96.8733 996,91.9926 980.038,86.8736 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="930" y="109">Refers to</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="115.904" y1="176" x2="115.6" y2="230"/>
+    <polygon style="fill: #000000" points="120.904,176.028 115.994,160 110.904,175.972 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="120.904,176.028 115.994,160 110.904,175.972 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="123" y="203">
+    <tspan x="123" y="203">Awarded to</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="202" y1="269.963" x2="642" y2="269"/>
+    <polygon style="fill: #000000" points="201.989,264.963 186,269.998 202.011,274.963 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="201.989,264.963 186,269.998 202.011,274.963 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="435.5" y="285">Approves</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="698.009,442 634,442 634,442 568,442 "/>
+    <polygon style="fill: #000000" points="636,442 636,434 644,438 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="615" y="432">
+    <tspan x="615" y="432">Processes</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="870.3" y1="440.879" x2="994" y2="440"/>
+    <polygon style="fill: #000000" points="870.264,435.879 854.3,440.993 870.335,445.879 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="870.264,435.879 854.3,440.993 870.335,445.879 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="923.5" y="430">Audits</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1093.9" y1="192" x2="1093.7" y2="131"/>
+    <polygon style="fill: #000000" points="1088.9,192.016 1093.95,208 1098.9,191.984 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1088.9,192.016 1093.95,208 1098.9,191.984 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1118" y="168">Lead to</text>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="296" y="82">
+    <tspan x="296" y="82">*</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="196" y="83">
+    <tspan x="196" y="83">*</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="600.5" y="85.2">
+    <tspan x="600.5" y="85.2">*</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="487" y="84">
+    <tspan x="487" y="84">1</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="868.5" y="86.2">
+    <tspan x="868.5" y="86.2">1</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="990" y="84.6">
+    <tspan x="990" y="84.6">1</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="984" y="429">
+    <tspan x="984" y="429">1</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="863" y="431">
+    <tspan x="863" y="431">*</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="684" y="434">
+    <tspan x="684" y="434">*</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="575" y="433">
+    <tspan x="575" y="433">*</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="190" y="260">
+    <tspan x="190" y="260">1</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="627" y="262">
+    <tspan x="627" y="262">1</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="122" y="225">
+    <tspan x="122" y="225">*</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="124" y="169">
+    <tspan x="124" y="169">1</tspan>
+  </text>
+</svg>
