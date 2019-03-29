@@ -12,6 +12,10 @@ isProcessedBy(awardApplicationForStudentA, deanOfEngineering).
 isProcessedBy(awardApplicationForStudentA,provost).
 approves(provost,kbea).
 approves(deanOfEngineering, kbea).
+reportsTo(provost, universityFinancialServices).
+processesPRD(universityFinancialServices, prd).
+forwardsPaymentTo(universityFinancialServices, officeOfStudentFinancialAid).
+maintains(provostOffice, kbea).
 hasAmount(kbea,100).
 hasFunder(kbea,selfSupporting).
 isGrantedTo(kbea,studentA).
@@ -43,6 +47,30 @@ official(Official) :- isProcessedBy(_,Official).
 isApprovedBy(Award,Official) :- approves(Official,Award).
 official(Official) :- approves(Official,_).
 award(Award) :- approves(_,Award).
+
+% Inverse, domain and codomain for 'reportsTo'
+% reportsTo: a provost reports to univeristy Financial Services Office
+receivesReport(FinancialServicesOffice, Official) :- reportsTo(Official, FinancialServicesOffice).
+official(Official) :- reportsTo(Official,_).
+financialServicesOffice(FinancialServicesOffice) :- reportsTo(_,FinancialServicesOffice).
+
+% Inverse, domain and codomain for 'processesPRD'
+% processesPRD: a Financial Services Office processes a PRD form
+prdIsProcessedBy(PRD, FinancialServicesOffice) :- processesPRD(FinancialServicesOffice, PRD).
+financialServicesOffice(FinancialServicesOffice) :- processesPRD(FinancialServicesOffice,_).
+prd(PRD) :- processesPRD(_,PRD).
+
+% Inverse, domain and codomain for 'forwardsPaymentTo'
+% forwardsPaymentTo: the Univeristy Financial Services Office forwards payment to the Office of Student Financial Aid
+receivesPaymentFrom(StudentFinancialAid, FinancialServicesOffice) :- forwardsPaymentTo(FinancialServicesOffice, StudentFinancialAid).
+financialServicesOffice(FinancialServicesOffice) :- forwardsPaymentTo(FinancialServicesOffice,_).
+studentFinancialAid(StudentFinancialAid) :- forwardsPaymentTo(_,StudentFinancialAid).
+
+% Inverse, domain and codomain for 'maintains'
+% maintians: the Provost Office maintains KBEA
+isMaintainedBy(Award, ProvostOffice) :- maintains(ProvostOffice, Award).
+provostOffice(ProvostOffice) :- maintains(ProvostOffice,_).
+award(Award) :- maintains(_,Award).
 
 % Inverse, domain and codomain for 'hasAmount'
 % hasAmount: an award has an amount
@@ -84,7 +112,7 @@ st50(Y) :- Y<50.
 provostApprove(Award) :- approves(provost, Award).
 deanApprove(Award) :- approves(deanOfEngineering, Award).
 isSelfSupporting(Award) :- hasFunder(Award, selfSupporting).
-% is_category2_gt50: help check if an award with more than 50 dollars amount is category 2. This applies to condition 1 (line 72)
+% is_category2_gt50: help check if an award with more than 50 dollars amount is category 2. This applies to condition 1 (line 100)
 is_category2_gt50(Award, Amount) :- hasAmount(Award, Amount), gt50(Amount), st500(Amount), provostApprove(Award), deanApprove(Award), isSelfSupporting(Award).
 
 % the following three lines refer to an award "small_prize" that we create to test condition 2 (since kbea is a condition1 award) 
@@ -92,5 +120,5 @@ is_category2_gt50(Award, Amount) :- hasAmount(Award, Amount), gt50(Amount), st50
 approves(deanOfEngineering, small_prize).
 hasAmount(small_prize,10).
 hasFunder(small_prize,selfSupporting).
-% is_category2_st50: help check if an award with smaller than 50 dollars amount is category 2. This applies to condition 2 (line 73)
+% is_category2_st50: help check if an award with smaller than 50 dollars amount is category 2. This applies to condition 2 (line 101)
 is_category2_st50(Award, Amount) :- hasAmount(Award, Amount), st50(Amount), deanApprove(Award), isSelfSupporting(Award).
