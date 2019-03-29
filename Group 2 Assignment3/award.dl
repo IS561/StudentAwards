@@ -1,0 +1,96 @@
+% Student awards and prizes
+% Datalog model by Group 2
+% March, 2019
+
+%
+% Instance graph assertions
+%
+
+belongsTo(studentA,departmentOfEngineering).
+files(departmentOfEngineering,awardApplicationForStudentA).
+isProcessedBy(awardApplicationForStudentA, deanOfEngineering).
+isProcessedBy(awardApplicationForStudentA,provost).
+approves(provost,kbea).
+approves(deanOfEngineering, kbea).
+hasAmount(kbea,100).
+hasFunder(kbea,selfSupporting).
+isGrantedTo(kbea,studentA).
+
+%
+% Domains, codomains, and inverse relationships
+%
+
+% Inverse, domain and codomain for 'belongsTo'
+% belongsTo: a student belongs to a department
+hasStudent(Department,Student) :- belongsTo(Student,Department).
+student(Student) :- belongsTo(Student,_).
+department(Department) :- belongsTo(_,Department).
+
+% Inverse, domain and codomain for 'files'
+% files: a department files an award application
+isFiledBy(AwardApplication,Department) :- files(Department,AwardApplication).
+department(Department) :- files(Department,_).
+awardApplication(AwardApplication) :- files(_,AwardApplication).
+
+% Inverse, domain and codomain for 'isProcessedBy'
+% isProcessedBy: an award application is processed by a university official
+processes(Official,AwardApplication) :- isProcessedBy(AwardApplication,Official).
+awardApplication(AwardApplication) :- isProcessedBy(AwardApplication,_).
+official(Official) :- isProcessedBy(_,Official).
+
+% Inverse, domain and codomain for 'approves'
+% approves: a university official approves an award
+isApprovedBy(Award,Official) :- approves(Official,Award).
+official(Official) :- approves(Official,_).
+award(Award) :- approves(_,Award).
+
+% Inverse, domain and codomain for 'hasAmount'
+% hasAmount: an award has an amount
+isOfAmount(Amount,Award) :- hasAmount(Award,Amount).
+award(Award) :- hasAmount(Award,_).
+amount(Amount) :- hasAmount(_,Amount).
+
+% Inverse, domain and codomain for 'hasFunder'
+% hasFunder: an award has a funder (also can be self supporting)
+isOfFunder(Funder,Award) :- hasFunder(Award,Funder).
+award(Award) :- hasFunder(Award,_).
+funder(Funder) :- hasFunder(_,Funder).
+
+% Inverse, domain and codomain for 'isGrantedTo'
+% isGrantedTo: an award is granted to a student
+grantsto(Student,Award) :- isGrantedTo(Award,Student).
+award(Award) :- isGrantedTo(Award,_).
+student(Student) :- isGrantedTo(_,Student).
+
+%
+% Rules of inference
+%
+
+% According to professor's assignment instructions, the Kentucky best engineer award is valued at $100. It is based in the engineering excellence program which is %self-supporting and approved by the provost. The award has been approved by the Dean of Engineering. Your program needs to demonstrate that the KBEA is a category 2 %award for these reasons, and that changing any of those facts can disqualify it from that status. Include an additional category 2 rule for prizes valued less than %50 that are approved by a dean, but need not be based in a provost-approved program.
+
+% From the instrctions above, we understand that there are three measures to determine whether an award is category 2: amount, approvedby and funder
+% CONDITION 1: If the award amount is between 50 to 500 dollars, it has to be self supporting and approved by the provost and dean to be category 2
+% CONDITION 2: If the award amount is lower than 50 dollars, it has to be self supporting and only approved by dean to be category 2. 
+
+% gt50: greater than 50 dollars; st500: smaller than 500 dollars; st50: smaller than 50 dollars
+% We have these three functions to help determine an award's category by its amount.
+gt50(Y) :- Y>=50.
+st500(Y) :- Y<500.
+st50(Y) :- Y<50.
+
+% provostApprove: if the award is approved by the provost, the console will return one tuple
+% deanApprove: if the award is approved by the dean, the console will return one tuple
+% isSelfSupporting: if the award is self supporting, the console will return one tuple
+provostApprove(Award) :- approves(provost, Award).
+deanApprove(Award) :- approves(deanOfEngineering, Award).
+isSelfSupporting(Award) :- hasFunder(Award, selfSupporting).
+% is_category2_gt50: help check if an award with more than 50 dollars amount is category 2. This applies to condition 1 (line 72)
+is_category2_gt50(Award, Amount) :- hasAmount(Award, Amount), gt50(Amount), st500(Amount), provostApprove(Award), deanApprove(Award), isSelfSupporting(Award).
+
+% the following three lines refer to an award "small_prize" that we create to test condition 2 (since kbea is a condition1 award) 
+% this "small prize" has an amount of 10 dollars, is self supporting and is only approved by the dean
+approves(deanOfEngineering, small_prize).
+hasAmount(small_prize,10).
+hasFunder(small_prize,selfSupporting).
+% is_category2_st50: help check if an award with smaller than 50 dollars amount is category 2. This applies to condition 2 (line 73)
+is_category2_st50(Award, Amount) :- hasAmount(Award, Amount), st50(Amount), deanApprove(Award), isSelfSupporting(Award).
