@@ -74,7 +74,7 @@ award(Award) :- maintains(_,Award).
 
 % Inverse, domain and codomain for 'hasAmount'
 % hasAmount: an award has an amount
-isOfAmount(Amount,Award) :- hasAmount(Award,Amount).
+isAssignedTo(Amount,Award) :- hasAmount(Award,Amount).
 award(Award) :- hasAmount(Award,_).
 amount(Amount) :- hasAmount(_,Amount).
 
